@@ -13,9 +13,13 @@ Steps to run the project.
 
 
 
-
+Note: Same original Link will generate unique values (short link) everytime we call the generate api and this is done using the  goggle hashing plugin murmur_32 and current time stamp. The lifetime of this url is also set to 150 seconds by default.
 
 1. Url Shortner API and values to test in postman 
+
+
+1.1 Creating a shortLink 
+
 ```
 Post url : http://localhost:8080/api/generate
 
@@ -37,3 +41,18 @@ Response :
     "expirationDate": "2021-07-12T22:43:35.1768411"
 }
 ```
+```
+Get url : localhost:8080/api/{unique-values}
+
+```
+
+Response :
+```
+It is redirect to the Amazon product page as per the given example.
+```
+
+
+
+
+2
+
